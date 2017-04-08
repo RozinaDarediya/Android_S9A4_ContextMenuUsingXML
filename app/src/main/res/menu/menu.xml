@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/name"
+            android:title="Context Menu">
+        <menu>
+            <item android:id="@+id/action1"
+                android:title="Action1"></item>
+
+            <item android:id="@+id/action2"
+                android:title="Action2"></item>
+
+            <item android:id="@+id/action3"
+            android:title="Action3"></item>
+        </menu>
+    </item>
+</menu>
