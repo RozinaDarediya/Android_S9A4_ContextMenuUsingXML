@@ -9,6 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+/**
+ *          created context menu having three options through xml
+ *          and show toast on selection of particular option.
+ *          User has to click on button to see the context menu.
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     Button button;
@@ -22,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         registerForContextMenu(button);
     }
 
+    //onCreateContextMenu() -> inflates the menu file with the activity.
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
@@ -30,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.menu,menu);
     }
 
+    //onContextItemSelected() -> will display the toast msg according the selection of menu
     @Override
     public boolean onContextItemSelected(MenuItem item) {
 
